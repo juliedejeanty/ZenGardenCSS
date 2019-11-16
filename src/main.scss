@@ -1,3 +1,119 @@
+@import "variables.scss";
 
+body{
+	padding: 0;
+	
+}
 
+.intro{
+    background-image: url("../images/FOND.png");
+    width: 1440px;
+    height: 1024px;
+    }
+    
+    h1{
+    position: absolute;
+    left: 73px;
+    top: 214px;
+    font-family: Allerta Stencil;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 82px;
+    color:$green;
+    }
+    
+    h2{
+        position: absolute;
+        left: 80px;
+        top: 300px;
+        font-family: Allerta Stencil;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 28px;
+        line-height: 36px;	
+        color:$black;
+    }
+    
+    .summary p{
+        position: absolute;
+        width: 571px;
+        height: 140px;
+        left: 80px;
+        font-family: Arial;
+        font-size: 18px;
+        color: #B8B8B8;
+    }
 
+    .summary :nth-child(1){
+        top: 397px;
+    }
+
+    .summary :nth-child(2){
+        top: 700px;
+        color:$green;   
+    }
+
+    .summary :nth-child(2) a{
+        color:$green;   
+    }
+
+    .preamble p{
+        position: absolute;
+        width: 1234px;
+        height: 147px;
+        font-family: Arial;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 21px;
+        color: #000000;
+        left: 109px;
+    }
+
+    .preamble :nth-child(2){
+        top: 1120px;
+    }
+    .preamble p:nth-child(3){
+        top:1140px
+    }
+    .preamble p:nth-child(4){
+        top:1160px
+    }
+    
+    .preamble h3{
+    position: absolute;
+    width: 369px;
+    height: 31px;
+    left: 109px;
+    top: 1070px;
+    font-family: Allerta Stencil;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 31px;
+    color:$green;
+    }
+
+    .viewall{
+        position: absolute;
+        width: 355px;
+        height: 72px;
+        left: 73px;
+        top: 537px;
+        background: #3E6249;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .viewall a{
+        position:absolute;
+        display: flex;
+        justify-content: center;
+        font-family: Allerta Stencil;
+        font-size:24px;
+        text-transform: uppercase;
+        color:#FFFFFF;
+        text-decoration: none
+    }
+    
