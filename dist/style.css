@@ -161,6 +161,7 @@ h2 {
   margin-top: 72px;
 }
 
+/*Titre*/
 .participation h3 {
   position: absolute;
   left: 779px;
@@ -171,6 +172,7 @@ h2 {
   text-transform: uppercase;
 }
 
+/*caractéristique paragraphe*/
 .participation :nth-child(4), .participation :nth-child(3), .participation :nth-child(2) {
   margin-left: 779px;
   color: #000000;
@@ -183,6 +185,7 @@ h2 {
   position: absolute;
 }
 
+/*Paragraphes*/
 .participation :nth-child(3) {
   top: 2060px;
 }
@@ -195,8 +198,10 @@ h2 {
   color: #000000;
 }
 
+/* 4EME PARTIE*/
+/* Changer fond*/
 .benefits {
-  background-image: url(../images/FOND4.png);
+  background-image: url("../images/FOND4.png");
   width: 1440px;
   height: 249px;
   top: 2241px;
@@ -205,6 +210,7 @@ h2 {
   z-index: -3;
 }
 
+/* Titre*/
 .benefits h3 {
   width: 112px;
   height: 31px;
@@ -215,6 +221,7 @@ h2 {
   color: #FFFFFF;
 }
 
+/* paragraphe*/
 .benefits p {
   position: absolute;
   width: 1234px;
@@ -224,6 +231,61 @@ h2 {
   color: #FFFFFF;
   margin-left: 109px;
   margin-top: -10px;
+}
+
+/* 5EME PARTIE*/
+.requirements {
+  background-image: url("../images/FOND5.png");
+  position: absolute;
+  width: 1440px;
+  height: 739px;
+  margin-top: 159px;
+}
+
+/*Titre*/
+.requirements h3 {
+  position: absolute;
+  width: 183px;
+  height: 31px;
+  left: 80px;
+  margin-top: 50px;
+  font-family: Allerta Stencil;
+  font-size: 24px;
+  color: #3E6249;
+}
+
+/*Caractéristiques paragraphe*/
+.requirements :nth-child(5), .requirements :nth-child(4), .requirements :nth-child(3), .requirements :nth-child(2) {
+  position: absolute;
+  width: 522px;
+  height: 252px;
+  left: 80px;
+  top: 80px;
+  font-family: Arial;
+  font-size: 18px;
+  color: #3E6249;
+}
+
+/*paragraphes*/
+.requirements :nth-child(5) :nth-child(3), .requirements :nth-child(5) :nth-child(2), .requirements :nth-child(2) :nth-child(4), .requirements :nth-child(2) :nth-child(3), .requirements :nth-child(2) :nth-child(2) {
+  position: initial;
+}
+
+.requirements :nth-child(3) {
+  top: 240px;
+}
+
+.requirements :nth-child(4) {
+  top: 440px;
+}
+
+.requirements :nth-child(5) {
+  top: 569px;
+}
+
+/*couleur lien paragraphe*/
+.requirements :nth-child(5) a {
+  color: #3E6249;
 }
 
 /*# sourceMappingURL=style.css.map */
