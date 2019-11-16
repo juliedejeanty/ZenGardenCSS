@@ -134,7 +134,7 @@ h2 {
 }
 
 /* caractéristiques paragraphes*/
-.participation :nth-child(3), .participation :nth-child(2), .explanation :nth-child(3), .explanation :nth-child(2) {
+.explanation :nth-child(3), .explanation :nth-child(2) {
   width: 570px;
   left: 73px;
   top: 1428px;
@@ -166,10 +166,30 @@ h2 {
   font-family: Allerta Stencil;
   font-size: 24px;
   color: #3E6249;
+  text-transform: uppercase;
+}
+
+.participation :nth-child(4), .participation :nth-child(3), .participation :nth-child(2) {
+  margin-left: 779px;
+  color: #000000;
+  font-family: Arial;
+  font-size: 18px;
+  width: 558px;
+  height: 357px;
+  top: 1930px;
+  position: absolute;
 }
 
 .participation :nth-child(3) {
-  top: 1950px;
+  top: 2060px;
+}
+
+.participation :nth-child(4) {
+  top: 2170px;
+}
+
+.participation :nth-child(4) a {
+  color: #000000;
 }
 
 /*# sourceMappingURL=style.css.map */

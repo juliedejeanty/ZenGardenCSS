@@ -171,23 +171,39 @@ body{
         font-family: Allerta Stencil;
         font-size: 24px;
         color:$green;
+        text-transform: uppercase;
     }
 
     %participation{
-        position: absolute;
-        left: 779px;
-        top: 1930px;
+        margin-left: 779px;
+        color:$black;
         font-family: Arial;
         font-size: 18px;
-        color: $black;
+        width: 558px;
+        height: 357px;
+        top: 1930px;
+        position: absolute;
     }
 
     .participation :nth-child(2){
-        @extend %explanation;
+        @extend %participation;
     }
 
     .participation :nth-child(3){
-        @extend %explanation;
-        top:1950px;
+        @extend %participation;
+        top:2060px;
     }
+
+    .participation :nth-child(4){
+        @extend %participation;
+        top:2170px;
+    }
+
+    .participation :nth-child(4) a{
+        color: $black;
+    }
+
+
+
+
 
