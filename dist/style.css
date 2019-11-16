@@ -288,4 +288,53 @@ h2 {
   color: #3E6249;
 }
 
+.sidebar .wrapper .design-selection {
+  position: absolute;
+  width: 1440px;
+  height: 220px;
+  left: -82px;
+  margin-top: 900px;
+  background-color: #3E6249;
+}
+
+.design-selection h3 {
+  margin-left: 200px;
+  font-family: Allerta Stencil;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.design-selection nav {
+  display: flex;
+  margin-left: 160px;
+  width: 1190px;
+}
+
+.design-selection nav ul {
+  display: flex !important;
+  list-style-type: none;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.design-selection nav :nth-child(8), .design-selection nav :nth-child(7), .design-selection nav :nth-child(6), .design-selection nav :nth-child(5), .design-selection nav :nth-child(4), .design-selection nav :nth-child(3), .design-selection nav :nth-child(2), .design-selection nav :nth-child(1) {
+  display: grid;
+  margin-right: 15px;
+}
+
+.design-selection nav ul li :first-child {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-family: allerta stencil;
+  text-transform: uppercase;
+}
+
+.design-selection nav ul li :last-child {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-family: arial;
+  text-decoration: underline;
+}
+
 /*# sourceMappingURL=style.css.map */
