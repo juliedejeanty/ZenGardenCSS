@@ -1,22 +1,23 @@
+@charset "UTF-8";
 body {
   padding: 0;
 }
 
+/*1ERE PARTIE*/
+/*changer le fond*/
 .intro {
   background-image: url("../images/FOND.png");
   width: 1440px;
   height: 1024px;
 }
 
+/*titres*/
 h1 {
   position: absolute;
   left: 73px;
   top: 214px;
   font-family: Allerta Stencil;
-  font-style: normal;
-  font-weight: normal;
   font-size: 64px;
-  line-height: 82px;
   color: #3E6249;
 }
 
@@ -28,10 +29,10 @@ h2 {
   font-style: normal;
   font-weight: normal;
   font-size: 28px;
-  line-height: 36px;
   color: #080A07;
 }
 
+/*paragraphe*/
 .summary p {
   position: absolute;
   width: 571px;
@@ -55,15 +56,13 @@ h2 {
   color: #3E6249;
 }
 
+/*paragraphe*/
 .preamble p {
   position: absolute;
   width: 1234px;
   height: 147px;
   font-family: Arial;
-  font-style: normal;
-  font-weight: normal;
   font-size: 18px;
-  line-height: 21px;
   color: #000000;
   left: 109px;
 }
@@ -77,9 +76,10 @@ h2 {
 }
 
 .preamble p:nth-child(4) {
-  top: 1160px;
+  top: 1190px;
 }
 
+/*titre*/
 .preamble h3 {
   position: absolute;
   width: 369px;
@@ -87,20 +87,18 @@ h2 {
   left: 109px;
   top: 1070px;
   font-family: Allerta Stencil;
-  font-style: normal;
-  font-weight: normal;
   font-size: 24px;
-  line-height: 31px;
   color: #3E6249;
 }
 
+/*bouton view all designs*/
 .viewall {
   position: absolute;
   width: 355px;
   height: 72px;
   left: 73px;
   top: 537px;
-  background: #3E6249;
+  background-color: #3E6249;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -108,13 +106,70 @@ h2 {
 
 .viewall a {
   position: absolute;
-  display: flex;
-  justify-content: center;
   font-family: Allerta Stencil;
   font-size: 24px;
   text-transform: uppercase;
   color: #FFFFFF;
   text-decoration: none;
+}
+
+/* 2EME PARTIE*/
+/* Changer le fond*/
+.explanation {
+  background-image: url("../images/FOND2.png");
+  width: 1440px;
+  height: 431px;
+  margin-top: 300px;
+}
+
+/* titre*/
+.explanation h3 {
+  left: 73px !important;
+  top: 1381px;
+  font-family: Allerta Stencil;
+  font-size: 24px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  position: absolute;
+}
+
+/* caractéristiques paragraphes*/
+.participation :nth-child(3), .participation :nth-child(2), .explanation :nth-child(3), .explanation :nth-child(2) {
+  width: 570px;
+  left: 73px;
+  top: 1428px;
+  font-family: Arial;
+  font-size: 18px;
+  color: #FFFFFF;
+  position: absolute;
+}
+
+/* paragraphe*/
+.explanation :nth-child(3) {
+  top: 1550px;
+}
+
+/* 3EME PARTIE*/
+/* Changer le fond*/
+.participation {
+  background-image: url("../images/FOND3.png");
+  width: 1440px;
+  height: 504px;
+  top: 1824px;
+  margin-top: 72px;
+}
+
+.participation h3 {
+  position: absolute;
+  left: 779px;
+  top: 1883px;
+  font-family: Allerta Stencil;
+  font-size: 24px;
+  color: #3E6249;
+}
+
+.participation :nth-child(3) {
+  top: 1950px;
 }
 
 /*# sourceMappingURL=style.css.map */
