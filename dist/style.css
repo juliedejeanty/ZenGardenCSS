@@ -288,6 +288,8 @@ h2 {
   color: #3E6249;
 }
 
+/*PARTIE 6*/
+/*fnd vert*/
 .sidebar .wrapper .design-selection {
   position: absolute;
   width: 1440px;
@@ -297,6 +299,7 @@ h2 {
   background-color: #3E6249;
 }
 
+/*titre*/
 .design-selection h3 {
   margin-left: 200px;
   font-family: Allerta Stencil;
@@ -311,6 +314,7 @@ h2 {
   width: 1190px;
 }
 
+/*alignement ul*/
 .design-selection nav ul {
   display: flex !important;
   list-style-type: none;
@@ -323,6 +327,8 @@ h2 {
   margin-right: 15px;
 }
 
+/*mode grille pour chaque enfant de nav*/
+/*titre des projets*/
 .design-selection nav ul li :first-child {
   color: #FFFFFF;
   text-decoration: none;
@@ -330,11 +336,47 @@ h2 {
   text-transform: uppercase;
 }
 
+/*auteur des projets*/
 .design-selection nav ul li :last-child {
   color: #FFFFFF;
   text-decoration: none;
   font-family: arial;
   text-decoration: underline;
+}
+
+/*PARTIE */
+.zen-resources {
+  background-image: url(../images/FOND6.png);
+  position: absolute;
+  width: 1667px;
+  height: 251px;
+  top: 3498px;
+}
+
+/*PARTIE 7*/
+/*titre*/
+.zen-resources h3 {
+  margin-left: 200px;
+  font-family: Allerta Stencil;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #3E6249;
+  margin-top: 50px;
+}
+
+/*alignement*/
+.zen-resources ul {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 60Px;
+  list-style-type: none;
+}
+
+/*liens*/
+.zen-resources ul li a {
+  text-decoration: none;
+  color: #3E6249;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */
