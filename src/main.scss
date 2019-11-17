@@ -57,6 +57,11 @@ body{
     .summary :nth-child(2) a{
         color:$green;
         text-transform: uppercase;
+
+        &:hover{
+            color:$white;
+            background-color: $green;
+        }
     }
 
     /*paragraphe*/
@@ -104,6 +109,10 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
+
+        &:hover{
+            background-color:$grey;
+        }
     }
     .viewall a{
         position:absolute;
@@ -111,7 +120,7 @@ body{
         font-size:24px;
         text-transform: uppercase;
         color:$white;
-        text-decoration: none
+        text-decoration: none;
     }
 
     .design-archives nav ul .next{
@@ -125,6 +134,10 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
+
+        &:hover{
+            background-color: $grey;
+        }
     } 
 
     .design-archives nav ul .next a{
@@ -132,14 +145,14 @@ body{
         font-size: 18px;
         color: black;
         text-decoration: none;
+
+        &:hover{
+            color:$white;
+        }
     }
 
     .design-archives h3{
-        display: hidden;
-    }
-
-    .design-archives nav ul .next .indicator{
-
+        display: none;
     }
 
     
@@ -228,22 +241,38 @@ body{
         @extend %participation;
         top:2060px;
     }
+
     .participation p :nth-child(2){
         position: relative;
         margin: 0;
         top: 0;
+
+        &:hover{
+            color:$white;
+            background-color: $green;
+        }
     }
 
     .participation p :nth-child(4){
         margin: 0;
         top: 0;
         position: initial;
+
+        &:hover{
+            color:$white;
+            background-color: $green;
+        }
     }
 
     .participation :nth-child(2) :nth-child(3){
         top: 0;
         margin: 0;
         position: initial;
+
+        &:hover{
+            color:$white;
+            background-color: $green;
+        }
     }
 
     .participation :nth-child(4) :nth-child(3){
@@ -259,6 +288,11 @@ body{
 
     .participation :nth-child(4) a{
         color: $green;
+
+        &:hover{
+            color:$white;
+            background-color: $green;
+        }
     }
 
     /* 4EME PARTIE*/
@@ -268,20 +302,18 @@ body{
         width: 1440px;
         height: 249px;  
         top: 2241px;
-        background:$black;
+        background:$green;
         position: absolute;
         z-index: -3;
     }
 
     /* Titre*/
     .benefits h3{
-        width: 112px;
-        height: 31px;
         margin-left: 109px;
         margin-top: 93px;
         font-family: Allerta Stencil;
         font-size: 24px;
-        color: #FFFFFF;
+        color:$white;
     }
 
     /* paragraphe*/
@@ -291,7 +323,7 @@ body{
         height: 66px;
         font-family: Arial;
         font-size: 18px;
-        color: #FFFFFF;
+        color: $white;
         margin-left: 109px;
         margin-top: -10px;
     }
@@ -373,6 +405,11 @@ body{
     /*couleur lien paragraphe*/
     .requirements :nth-child(5) a{
         color: $green;
+
+        &:hover{
+            color:$white;
+            background-color: $green;
+        }
     }
 
     /*PARTIE 6*/
@@ -382,7 +419,7 @@ body{
         width: 1440px;
         height: 220px;
         left: -82px;
-        margin-top: 900px;
+        margin-top: 920px;
         background-color: $green;
     }
 
@@ -453,6 +490,11 @@ body{
        text-decoration: none;
        font-family: allerta stencil;
        text-transform: uppercase;
+
+       &:hover{
+           color:$dark;
+           background-color: $white;
+       }
     }   
 
     /*auteur des projets*/
@@ -461,6 +503,10 @@ body{
         text-decoration: none;
         font-family: arial;
         text-decoration: underline;
+
+        &:hover{
+            color:$dark;
+        }
      }   
       
     /*PARTIE */
@@ -497,6 +543,11 @@ body{
         text-decoration: none;
         color:$green;
         font-family: Arial, Helvetica, sans-serif;
+
+        &:hover{
+            color:$white;
+            background-color: $green;
+        }
     }
 
     /*PARTIE 7 : CREDITS*/
@@ -504,12 +555,38 @@ body{
         margin-top: 1230px;
         font-family: arial;
         margin-left: 320px;
+        color:$green;
     }
 
     .requirements :nth-child(6) a{
         font-family: arial;
-        color: $black;
+        color: $green;
         position: inherit;
     }
 
+    /*FOOTER*/
+    footer{
+        margin-top: 1450px;
+        background-color: $green;
+        height: 120px;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 1440px;
+    }
 
+    /*liens footer*/
+    footer a{
+        display: flex;
+        justify-content: center;
+        color: $white;
+        text-decoration: none;
+        font-family: Arial;
+
+        &:hover{
+            color:$green;
+            background-color: $white;
+        }
+        
+    }

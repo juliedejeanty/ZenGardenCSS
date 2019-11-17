@@ -57,6 +57,10 @@ h2 {
   color: #3E6249;
   text-transform: uppercase;
 }
+.summary :nth-child(2) a:hover {
+  color: #FFFFFF;
+  background-color: #3E6249;
+}
 
 /*paragraphe*/
 .preamble p {
@@ -106,6 +110,9 @@ h2 {
   justify-content: center;
   align-items: center;
 }
+.viewall:hover {
+  background-color: #B8B8B8;
+}
 
 .viewall a {
   position: absolute;
@@ -128,6 +135,9 @@ h2 {
   justify-content: center;
   align-items: center;
 }
+.design-archives nav ul .next:hover {
+  background-color: #B8B8B8;
+}
 
 .design-archives nav ul .next a {
   font-family: Allerta Stencil;
@@ -135,9 +145,12 @@ h2 {
   color: black;
   text-decoration: none;
 }
+.design-archives nav ul .next a:hover {
+  color: #FFFFFF;
+}
 
 .design-archives h3 {
-  display: hidden;
+  display: none;
 }
 
 /* 2EME PARTIE*/
@@ -220,17 +233,29 @@ h2 {
   margin: 0;
   top: 0;
 }
+.participation p :nth-child(2):hover {
+  color: #FFFFFF;
+  background-color: #3E6249;
+}
 
 .participation p :nth-child(4) {
   margin: 0;
   top: 0;
   position: initial;
 }
+.participation p :nth-child(4):hover {
+  color: #FFFFFF;
+  background-color: #3E6249;
+}
 
 .participation :nth-child(2) :nth-child(3) {
   top: 0;
   margin: 0;
   position: initial;
+}
+.participation :nth-child(2) :nth-child(3):hover {
+  color: #FFFFFF;
+  background-color: #3E6249;
 }
 
 .participation :nth-child(4) :nth-child(3) {
@@ -246,6 +271,10 @@ h2 {
 .participation :nth-child(4) a {
   color: #3E6249;
 }
+.participation :nth-child(4) a:hover {
+  color: #FFFFFF;
+  background-color: #3E6249;
+}
 
 /* 4EME PARTIE*/
 /* Changer fond*/
@@ -254,15 +283,13 @@ h2 {
   width: 1440px;
   height: 249px;
   top: 2241px;
-  background: #000000;
+  background: #3E6249;
   position: absolute;
   z-index: -3;
 }
 
 /* Titre*/
 .benefits h3 {
-  width: 112px;
-  height: 31px;
   margin-left: 109px;
   margin-top: 93px;
   font-family: Allerta Stencil;
@@ -336,6 +363,10 @@ h2 {
 .requirements :nth-child(5) a {
   color: #3E6249;
 }
+.requirements :nth-child(5) a:hover {
+  color: #FFFFFF;
+  background-color: #3E6249;
+}
 
 /*PARTIE 6*/
 /*fond vert*/
@@ -344,7 +375,7 @@ h2 {
   width: 1440px;
   height: 220px;
   left: -82px;
-  margin-top: 900px;
+  margin-top: 920px;
   background-color: #3E6249;
 }
 
@@ -384,6 +415,10 @@ h2 {
   font-family: allerta stencil;
   text-transform: uppercase;
 }
+.design-selection nav ul li :first-child:hover {
+  color: #080A07;
+  background-color: #FFFFFF;
+}
 
 /*auteur des projets*/
 .design-selection nav ul li :last-child {
@@ -391,6 +426,9 @@ h2 {
   text-decoration: none;
   font-family: arial;
   text-decoration: underline;
+}
+.design-selection nav ul li :last-child:hover {
+  color: #080A07;
 }
 
 /*PARTIE */
@@ -428,18 +466,48 @@ h2 {
   color: #3E6249;
   font-family: Arial, Helvetica, sans-serif;
 }
+.zen-resources ul li a:hover {
+  color: #FFFFFF;
+  background-color: #3E6249;
+}
 
 /*PARTIE 7 : CREDITS*/
 .requirements :nth-child(6) {
   margin-top: 1230px;
   font-family: arial;
   margin-left: 320px;
+  color: #3E6249;
 }
 
 .requirements :nth-child(6) a {
   font-family: arial;
-  color: #000000;
+  color: #3E6249;
   position: inherit;
+}
+
+/*FOOTER*/
+footer {
+  margin-top: 1450px;
+  background-color: #3E6249;
+  height: 120px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 1440px;
+}
+
+/*liens footer*/
+footer a {
+  display: flex;
+  justify-content: center;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-family: Arial;
+}
+footer a:hover {
+  color: #3E6249;
+  background-color: #FFFFFF;
 }
 
 /*# sourceMappingURL=style.css.map */
