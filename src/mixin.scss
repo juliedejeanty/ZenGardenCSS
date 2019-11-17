@@ -1,0 +1,23 @@
+@mixin h3 ($color){
+    font-family: Allerta Stencil;
+    font-size: 24px;
+    color:$color;
+    text-transform: uppercase;
+}
+
+@mixin bouton ($back-color) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $back-color;
+    &:hover{
+        background-color:$grey;
+    }
+}
+
+@mixin p ($color){
+    font-family: Arial;
+    font-size: 18px;
+    color:$color;
+    position: absolute;
+}

@@ -1,7 +1,39 @@
 @charset "UTF-8";
-body {
-  margin: 0;
-  width: 1440px;
+.zen-resources ul li a:hover, .participation :nth-child(4) a:hover, .participation :nth-child(2) :nth-child(3):hover, .participation p :nth-child(4):hover, .participation p :nth-child(2):hover, .summary :nth-child(2) a:hover {
+  color: #FFFFFF;
+  background-color: #3E6249;
+}
+
+.explanation :nth-child(3), .explanation :nth-child(2) {
+  width: 570px;
+  left: 73px;
+  top: 1428px;
+  font-family: Arial;
+  font-size: 18px;
+  color: #FFFFFF;
+  position: absolute;
+}
+
+.participation :nth-child(4), .participation :nth-child(3), .participation :nth-child(2) {
+  margin-left: 779px;
+  color: #3E6249;
+  font-family: Arial;
+  font-size: 18px;
+  width: 558px;
+  height: 357px;
+  top: 1930px;
+  position: absolute;
+}
+
+.requirements :nth-child(5), .requirements :nth-child(4), .requirements :nth-child(3), .requirements :nth-child(2) {
+  position: absolute;
+  width: 522px;
+  height: 252px;
+  left: 80px;
+  top: 80px;
+  font-family: Arial;
+  font-size: 18px;
+  color: #3E6249;
 }
 
 /*1ERE PARTIE*/
@@ -35,13 +67,13 @@ h2 {
 
 /*paragraphe*/
 .summary p {
-  position: absolute;
   width: 571px;
   height: 140px;
   left: 80px;
   font-family: Arial;
   font-size: 18px;
   color: #B8B8B8;
+  position: absolute;
 }
 
 .summary :nth-child(1) {
@@ -57,20 +89,14 @@ h2 {
   color: #3E6249;
   text-transform: uppercase;
 }
-.summary :nth-child(2) a:hover {
-  color: #FFFFFF;
-  background-color: #3E6249;
-}
-
 /*paragraphe*/
 .preamble p {
-  position: absolute;
   width: 1234px;
-  height: 147px;
+  left: 109px;
   font-family: Arial;
   font-size: 18px;
   color: #3E6249;
-  left: 109px;
+  position: absolute;
 }
 
 .preamble :nth-child(2) {
@@ -87,11 +113,10 @@ h2 {
 
 /*titre*/
 .preamble h3 {
-  position: absolute;
   width: 390px;
-  height: 31px;
-  left: 109px;
-  top: 1070px;
+  padding-left: 109px;
+  padding-top: 1070px;
+  height: 30px;
   font-family: Allerta Stencil;
   font-size: 24px;
   color: #3E6249;
@@ -105,10 +130,10 @@ h2 {
   height: 72px;
   left: 73px;
   top: 537px;
-  background-color: #3E6249;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #3E6249;
 }
 .viewall:hover {
   background-color: #B8B8B8;
@@ -129,11 +154,13 @@ h2 {
   height: 45px;
   left: 1146px;
   top: 28px;
-  background: #FFFFFF;
-  list-style-type: none;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #FFFFFF;
+}
+.design-archives nav ul .next:hover {
+  background-color: #B8B8B8;
 }
 .design-archives nav ul .next:hover {
   background-color: #B8B8B8;
@@ -164,24 +191,13 @@ h2 {
 
 /* titre*/
 .explanation h3 {
-  left: 73px !important;
+  padding-top: 45px;
+  margin-left: 73px !important;
   top: 1381px;
   font-family: Allerta Stencil;
   font-size: 24px;
   color: #FFFFFF;
   text-transform: uppercase;
-  position: absolute;
-}
-
-/* caractéristiques paragraphes*/
-.explanation :nth-child(3), .explanation :nth-child(2) {
-  width: 570px;
-  left: 73px;
-  top: 1428px;
-  font-family: Arial;
-  font-size: 18px;
-  color: #FFFFFF;
-  position: absolute;
 }
 
 /* paragraphe*/
@@ -201,26 +217,13 @@ h2 {
 
 /*Titre*/
 .participation h3 {
-  position: absolute;
-  left: 779px;
+  margin-left: 779px;
   top: 1883px;
+  padding-top: 50px;
   font-family: Allerta Stencil;
   font-size: 24px;
   color: #3E6249;
   text-transform: uppercase;
-}
-
-/*caractéristique paragraphe*/
-.participation :nth-child(4), .participation :nth-child(3), .participation :nth-child(2) {
-  margin-left: 779px;
-  color: #3E6249;
-  font-family: Arial;
-  font-size: 18px;
-  width: 558px;
-  height: 357px;
-  top: 1930px;
-  z-index: 10;
-  position: absolute;
 }
 
 /*Paragraphes*/
@@ -233,31 +236,16 @@ h2 {
   margin: 0;
   top: 0;
 }
-.participation p :nth-child(2):hover {
-  color: #FFFFFF;
-  background-color: #3E6249;
-}
-
 .participation p :nth-child(4) {
   margin: 0;
   top: 0;
   position: initial;
 }
-.participation p :nth-child(4):hover {
-  color: #FFFFFF;
-  background-color: #3E6249;
-}
-
 .participation :nth-child(2) :nth-child(3) {
   top: 0;
   margin: 0;
   position: initial;
 }
-.participation :nth-child(2) :nth-child(3):hover {
-  color: #FFFFFF;
-  background-color: #3E6249;
-}
-
 .participation :nth-child(4) :nth-child(3) {
   top: 0;
   margin: 0;
@@ -271,11 +259,6 @@ h2 {
 .participation :nth-child(4) a {
   color: #3E6249;
 }
-.participation :nth-child(4) a:hover {
-  color: #FFFFFF;
-  background-color: #3E6249;
-}
-
 /* 4EME PARTIE*/
 /* Changer fond*/
 .benefits {
@@ -295,6 +278,7 @@ h2 {
   font-family: Allerta Stencil;
   font-size: 24px;
   color: #FFFFFF;
+  text-transform: uppercase;
 }
 
 /* paragraphe*/
@@ -305,6 +289,7 @@ h2 {
   font-family: Arial;
   font-size: 18px;
   color: #FFFFFF;
+  position: absolute;
   margin-left: 109px;
   margin-top: -10px;
 }
@@ -320,14 +305,12 @@ h2 {
 
 /*Titre*/
 .requirements h3 {
-  position: absolute;
-  width: 183px;
-  height: 31px;
-  left: 80px;
+  margin-left: 80px;
   margin-top: 50px;
   font-family: Allerta Stencil;
   font-size: 24px;
   color: #3E6249;
+  text-transform: uppercase;
 }
 
 /*Caractéristiques paragraphe*/
@@ -384,8 +367,8 @@ h2 {
   margin-left: 200px;
   font-family: Allerta Stencil;
   font-size: 24px;
-  text-transform: uppercase;
   color: #FFFFFF;
+  text-transform: uppercase;
 }
 
 .design-selection nav {
@@ -444,11 +427,11 @@ h2 {
 /*titre*/
 .zen-resources h3 {
   margin-left: 200px;
+  margin-top: 50px;
   font-family: Allerta Stencil;
   font-size: 24px;
-  text-transform: uppercase;
   color: #3E6249;
-  margin-top: 50px;
+  text-transform: uppercase;
 }
 
 /*alignements*/
@@ -466,14 +449,9 @@ h2 {
   color: #3E6249;
   font-family: Arial, Helvetica, sans-serif;
 }
-.zen-resources ul li a:hover {
-  color: #FFFFFF;
-  background-color: #3E6249;
-}
-
 /*PARTIE 7 : CREDITS*/
 .requirements :nth-child(6) {
-  margin-top: 1230px;
+  margin-top: 1130px;
   font-family: arial;
   margin-left: 320px;
   color: #3E6249;

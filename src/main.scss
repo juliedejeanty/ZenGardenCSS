@@ -1,9 +1,5 @@
 @import "variables.scss";
-
-body{
-	margin: 0;
-	width: 1440px;
-}
+@import "mixin.scss";
 
 /*1ERE PARTIE*/
 /*changer le fond*/
@@ -36,13 +32,10 @@ body{
 
   /*paragraphe*/
     .summary p{
-        position: absolute;
         width: 571px;
         height: 140px;
         left: 80px;
-        font-family: Arial;
-        font-size: 18px;
-        color:$grey;
+        @include p ($grey)
     }
 
     .summary :nth-child(1){
@@ -59,20 +52,16 @@ body{
         text-transform: uppercase;
 
         &:hover{
-            color:$white;
-            background-color: $green;
+            @extend %hover;
         }
     }
 
     /*paragraphe*/
     .preamble p{
-        position: absolute;
         width: 1234px;
-        height: 147px;
-        font-family: Arial;
-        font-size: 18px;
-        color:$green;
         left: 109px;
+        @include p ($green);
+
     }
 
     .preamble :nth-child(2){
@@ -87,15 +76,11 @@ body{
     
     /*titre*/
     .preamble h3{
-    position: absolute;
     width: 390px;
-    height: 31px;
-    left: 109px;
-    top: 1070px;
-    font-family: Allerta Stencil;
-    font-size: 24px;
-    color:$green;
-    text-transform: uppercase;
+    padding-left: 109px;
+    padding-top: 1070px;
+    height: 30px;
+    @include h3 ($green);
     }
 
     /*bouton view all designs*/
@@ -105,14 +90,7 @@ body{
         height: 72px;
         left: 73px;
         top: 537px;
-        background-color:$green;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        &:hover{
-            background-color:$grey;
-        }
+        @include bouton ($green);
     }
     .viewall a{
         position:absolute;
@@ -129,11 +107,7 @@ body{
         height: 45px;
         left: 1146px;
         top: 28px;
-        background: $white;
-        list-style-type: none;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include bouton ($white);
 
         &:hover{
             background-color: $grey;
@@ -167,24 +141,10 @@ body{
 
     /* titre*/
     .explanation h3{
-        left: 73px!important;
+        padding-top: 45px;
+        margin-left: 73px!important;
         top: 1381px;
-        font-family: Allerta Stencil;
-        font-size: 24px;
-        color:$white;
-        text-transform: uppercase;
-        position: absolute;
-    }
-
-    /* caractéristiques paragraphes*/
-    %explanation{
-        width: 570px;
-        left: 73px;
-        top: 1428px;
-        font-family: Arial;
-        font-size: 18px;
-        color:$white;
-        position: absolute;
+        @include h3 ($white);
     }
 
     /* paragraphe*/
@@ -210,26 +170,10 @@ body{
 
     /*Titre*/
     .participation h3{
-        position: absolute;
-        left: 779px;
-        top: 1883px;
-        font-family: Allerta Stencil;
-        font-size: 24px;
-        color:$green;
-        text-transform: uppercase;
-    }
-
-    /*caractéristique paragraphe*/
-    %participation{
         margin-left: 779px;
-        color:$green;
-        font-family: Arial;
-        font-size: 18px;
-        width: 558px;
-        height: 357px;
-        top: 1930px;
-        z-index: 10;
-        position:absolute;
+        top: 1883px;
+        padding-top: 50px;
+        @include h3 ($green);
     }
 
     /*Paragraphes*/
@@ -248,8 +192,7 @@ body{
         top: 0;
 
         &:hover{
-            color:$white;
-            background-color: $green;
+            @extend %hover;
         }
     }
 
@@ -259,8 +202,7 @@ body{
         position: initial;
 
         &:hover{
-            color:$white;
-            background-color: $green;
+            @extend %hover;
         }
     }
 
@@ -270,8 +212,7 @@ body{
         position: initial;
 
         &:hover{
-            color:$white;
-            background-color: $green;
+            @extend %hover;
         }
     }
 
@@ -290,8 +231,7 @@ body{
         color: $green;
 
         &:hover{
-            color:$white;
-            background-color: $green;
+            @extend %hover;
         }
     }
 
@@ -311,9 +251,7 @@ body{
     .benefits h3{
         margin-left: 109px;
         margin-top: 93px;
-        font-family: Allerta Stencil;
-        font-size: 24px;
-        color:$white;
+        @include h3 ($white);
     }
 
     /* paragraphe*/
@@ -321,9 +259,7 @@ body{
         position: absolute;
         width: 1234px;
         height: 66px;
-        font-family: Arial;
-        font-size: 18px;
-        color: $white;
+        @include p ($white);
         margin-left: 109px;
         margin-top: -10px;
     }
@@ -339,14 +275,9 @@ body{
 
     /*Titre*/
     .requirements h3{
-        position: absolute;
-        width: 183px;
-        height: 31px;
-        left: 80px;
+        margin-left: 80px;
         margin-top: 50px;
-        font-family: Allerta Stencil;
-        font-size: 24px;        
-        color:$green;
+        @include h3 ($green);
     }
 
     /*Caractéristiques paragraphe*/
@@ -426,10 +357,7 @@ body{
     /*titre*/
     .design-selection h3{
         margin-left: 200px;
-        font-family: Allerta Stencil;
-        font-size: 24px;
-        text-transform: uppercase;
-        color: $white;
+        @include h3 ($white);
     }
 
     .design-selection nav{
@@ -522,11 +450,9 @@ body{
     /*titre*/
     .zen-resources h3{
         margin-left: 200px;
-        font-family: Allerta Stencil;
-        font-size: 24px;
-        text-transform: uppercase;
-        color: $green;
         margin-top:50px;
+        @include h3 ($green);
+
     }
 
     /*alignements*/
@@ -545,14 +471,13 @@ body{
         font-family: Arial, Helvetica, sans-serif;
 
         &:hover{
-            color:$white;
-            background-color: $green;
+            @extend %hover;
         }
     }
 
     /*PARTIE 7 : CREDITS*/
     .requirements :nth-child(6){
-        margin-top: 1230px;
+        margin-top: 1130px;
         font-family: arial;
         margin-left: 320px;
         color:$green;
@@ -585,8 +510,8 @@ body{
         font-family: Arial;
 
         &:hover{
-            color:$green;
-            background-color: $white;
+           color: $green;
+           background-color: $white;
         }
         
     }

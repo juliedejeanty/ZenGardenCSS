@@ -3,3 +3,40 @@ $dark:#080A07;
 $grey:#B8B8B8;
 $black:#000000;
 $white:#FFFFFF;
+
+%hover{
+    color:$white;
+    background-color: $green;
+}
+
+%explanation{
+    width: 570px;
+    left: 73px;
+    top: 1428px;
+    font-family: Arial;
+    font-size: 18px;
+    color:$white;
+    position: absolute;
+}
+
+%participation{
+    margin-left: 779px;
+    color:$green;
+    font-family: Arial;
+    font-size: 18px;
+    width: 558px;
+    height: 357px;
+    top: 1930px;
+    position:absolute;
+}
+
+%requirements{
+    position: absolute;
+    width: 522px;
+    height: 252px;
+    left: 80px;
+    top: 80px;
+    font-family: Arial;
+    font-size: 18px;    
+    color:$green;
+}
