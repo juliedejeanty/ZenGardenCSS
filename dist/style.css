@@ -1,6 +1,6 @@
 @charset "UTF-8";
 body {
-  padding: 0;
+  margin: 0;
   width: 1440px;
 }
 
@@ -190,6 +190,30 @@ h2 {
   top: 2060px;
 }
 
+.participation p :nth-child(2) {
+  position: relative;
+  margin: 0;
+  top: 0;
+}
+
+.participation p :nth-child(4) {
+  margin: 0;
+  top: 0;
+  position: initial;
+}
+
+.participation :nth-child(2) :nth-child(3) {
+  top: 0;
+  margin: 0;
+  position: initial;
+}
+
+.participation :nth-child(4) :nth-child(3) {
+  top: 0;
+  margin: 0;
+  position: initial;
+}
+
 .participation :nth-child(4) {
   top: 2170px;
 }
@@ -348,7 +372,7 @@ h2 {
 .zen-resources {
   background-image: url(../images/FOND6.png);
   position: absolute;
-  width: 1667px;
+  width: 1440px;
   height: 251px;
   top: 3498px;
 }
@@ -364,12 +388,13 @@ h2 {
   margin-top: 50px;
 }
 
-/*alignement*/
+/*alignements*/
 .zen-resources ul {
   display: flex;
   justify-content: space-around;
-  margin-left: 60Px;
+  margin-left: 85Px;
   list-style-type: none;
+  width: 1270px;
 }
 
 /*liens*/
@@ -377,6 +402,19 @@ h2 {
   text-decoration: none;
   color: #3E6249;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/*PARTIE 7 : CREDITS*/
+.requirements :nth-child(6) {
+  margin-top: 1230px;
+  font-family: arial;
+  margin-left: 320px;
+}
+
+.requirements :nth-child(6) a {
+  font-family: arial;
+  color: #000000;
+  position: inherit;
 }
 
 /*# sourceMappingURL=style.css.map */

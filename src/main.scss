@@ -1,7 +1,7 @@
 @import "variables.scss";
 
 body{
-	padding: 0;
+	margin: 0;
 	width: 1440px;
 }
 
@@ -197,6 +197,29 @@ body{
     .participation :nth-child(3){
         @extend %participation;
         top:2060px;
+    }
+    .participation p :nth-child(2){
+        position: relative;
+        margin: 0;
+        top: 0;
+    }
+
+    .participation p :nth-child(4){
+        margin: 0;
+        top: 0;
+        position: initial;
+    }
+
+    .participation :nth-child(2) :nth-child(3){
+        top: 0;
+        margin: 0;
+        position: initial;
+    }
+
+    .participation :nth-child(4) :nth-child(3){
+        top: 0;
+        margin: 0;
+        position: initial;
     }
 
     .participation :nth-child(4){
@@ -414,7 +437,7 @@ body{
     .zen-resources{
         background-image: url(../images/FOND6.png);
         position: absolute;
-        width: 1667px;
+        width: 1440px;
         height: 251px;
         top: 3498px;
     }
@@ -430,12 +453,13 @@ body{
         margin-top:50px;
     }
 
-    /*alignement*/
+    /*alignements*/
     .zen-resources ul{
         display: flex;
         justify-content: space-around;
-        margin-left: 60Px;
+        margin-left: 85Px;
         list-style-type: none;
+        width: 1270px;
     }
 
     /*liens*/
@@ -443,4 +467,17 @@ body{
         text-decoration: none;
         color:$green;
         font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /*PARTIE 7 : CREDITS*/
+    .requirements :nth-child(6){
+        margin-top: 1230px;
+        font-family: arial;
+        margin-left: 320px;
+    }
+
+    .requirements :nth-child(6) a{
+        font-family: arial;
+        color: $black;
+        position: inherit;
     }
