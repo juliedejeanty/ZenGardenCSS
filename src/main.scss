@@ -55,7 +55,8 @@ body{
     }
 
     .summary :nth-child(2) a{
-        color:$green;   
+        color:$green;
+        text-transform: uppercase;
     }
 
     /*paragraphe*/
@@ -65,7 +66,7 @@ body{
         height: 147px;
         font-family: Arial;
         font-size: 18px;
-        color:$black;
+        color:$green;
         left: 109px;
     }
 
@@ -112,6 +113,35 @@ body{
         color:$white;
         text-decoration: none
     }
+
+    .design-archives nav ul .next{
+        position: absolute;
+        width: 240px;
+        height: 45px;
+        left: 1146px;
+        top: 28px;
+        background: $white;
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } 
+
+    .design-archives nav ul .next a{
+        font-family: Allerta Stencil;
+        font-size: 18px;
+        color: black;
+        text-decoration: none;
+    }
+
+    .design-archives h3{
+        display: hidden;
+    }
+
+    .design-archives nav ul .next .indicator{
+
+    }
+
     
     /* 2EME PARTIE*/
     /* Changer le fond*/
@@ -179,7 +209,7 @@ body{
     /*caractéristique paragraphe*/
     %participation{
         margin-left: 779px;
-        color:$black;
+        color:$green;
         font-family: Arial;
         font-size: 18px;
         width: 558px;
@@ -228,7 +258,7 @@ body{
     }
 
     .participation :nth-child(4) a{
-        color: $black;
+        color: $green;
     }
 
     /* 4EME PARTIE*/
@@ -346,7 +376,7 @@ body{
     }
 
     /*PARTIE 6*/
-    /*fnd vert*/
+    /*fond vert*/
     .sidebar .wrapper .design-selection{
         position: absolute;
         width: 1440px;
@@ -481,3 +511,5 @@ body{
         color: $black;
         position: inherit;
     }
+
+
