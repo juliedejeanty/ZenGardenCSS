@@ -7,6 +7,7 @@
     background-image: url("../images/FOND.png");
     width: 1440px;
     height: 1024px;
+    display: flex;
     }
 
 /*titres*/    
@@ -513,5 +514,4 @@
            color: $green;
            background-color: $white;
         }
-        
     }
